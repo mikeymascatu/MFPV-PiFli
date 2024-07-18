@@ -1,3 +1,5 @@
+// Note to Arcade Reviewers, this program was AI-assisted by ChatGPT (Worked on setting up AP as little documentation exists for the pico/ardunio IDE)
+
 #include <WiFi.h>
 
 // Replace with your desired network credentials
