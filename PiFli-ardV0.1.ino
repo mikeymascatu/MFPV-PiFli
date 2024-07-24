@@ -1,5 +1,3 @@
-// Note to Arcade Reviewers, this program was AI-assisted by ChatGPT (Worked on setting up AP as little documentation exists for the pico/ardunio IDE)
-
 #include <WiFi.h>
 
 // Replace with your desired network credentials
@@ -65,6 +63,10 @@ void loop() {
             client.println("<body><h1>Welcome!</h1></body>");
             client.println("<body><h1>MFPV PiFli Web Portal</h1></body>");
             client.println("<body><h2>Authorized Access ONLY</h2></body>");
+            client.println("<p>Camera Servo Control</p>");
+            client.println("<input type=\"range\" min=\"1\" max=\"100\" value=\"50\" class=\"slider\" id=\"cameractrl\">");
+            client.println("<p>Accesory Servo Control</p>");
+            client.println("<input type=\"range\" min=\"1\" max=\"100\" value=\"50\" class=\"slider\" id=\"accesoryctrl\">");
             client.println("</html>");
             
             break;
